@@ -2,7 +2,6 @@
 using Microsoft.Win32;
 
 Add1 Add1 = new Add1();
-//Add1.RegistryAdder2("123", "MyValue_2");
 
 Add1.RegistryAdder_readKeyValue("MyValue_2");
 Add1.RegistryAdder_addOrRecreateNewValue("MyValue_3", "Новое значение 1");
@@ -12,11 +11,15 @@ Add1.RegistryAdder_readKeyValue("MyValue_3");
 
 public class Add1
 {
-    // Вторая, основная версия метода
-    public void RegistryAdder2(string inputString, string valueName = "MyValue")
-    {
+    // Этот клас реализует 2 процедуры:
+    //
+    // 1. Создание нового ключа в реестре
+    // RegistryAdder_addOrRecreateNewValue(имя ключа, значение ключа, путь к ключу)
+    //
+    // 2. Чтение значения ключа по его имени
+    // RegistryAdder_readKeyValue(имя ключа, путь к ключу)
+    // Эта процедура возвращает значение, а также выводит его в консоль
 
-    }
 
     // Метод, который создаёт новый, или перезаписывает существующий ключ
     // Метод принимает: Имя ключа, Значение ключа и Путь к ключу (есть определение по умолчанию)
@@ -83,38 +86,4 @@ public class Add1
 
         return keyValue;
     }
-
-
-
-    //// Первая версия метода
-    //public void RegistryAdder1(string keyValue, string keyName = "MyValue")
-    //{
-    //    // keyPath - путь к ключу 
-    //    // keyName - имя ключа 
-    //    // Если не передано в функцию - то по умолчанию "MyValue"
-
-    //    // Путь к ключу реестра
-    //    string keyPath = @"SOFTWARE\MyApp";
-
-    //    try
-    //    {
-    //        // Создание/открытие ключа
-    //        RegistryKey key = Registry.CurrentUser.CreateSubKey(keyPath);
-
-    //        // Запись значения
-    //        key.SetValue(keyName, keyValue);
-    //        Console.WriteLine($"Значение '{keyName}' записано в реестр.");
-
-    //        // Чтение значения
-    //        object value = key.GetValue(keyName);
-    //        Console.WriteLine($"Значение '{keyName}' из реестра: {value}");
-
-    //        // Закрытие ключа
-    //        key.Close();
-    //    }
-    //    catch (Exception ex)
-    //    {
-    //        Console.WriteLine($"Произошла ошибка: {ex.Message}");
-    //    }
-    //}
 }
