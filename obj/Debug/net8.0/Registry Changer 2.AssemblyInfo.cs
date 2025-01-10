@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Registry Changer 2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1f96bf6ee3be35fc48fb619be6b0c89053de1f1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Registry Changer 2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Registry Changer 2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

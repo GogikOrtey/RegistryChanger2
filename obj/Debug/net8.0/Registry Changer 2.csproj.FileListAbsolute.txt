@@ -12,3 +12,4 @@ C:\Users\orlov\Desktop\Проекты\2_Практика с Nice3 Point\Registry
 C:\Users\orlov\Desktop\Проекты\2_Практика с Nice3 Point\Registry Changer 2\obj\Debug\net8.0\Registry Changer 2.pdb
 C:\Users\orlov\Desktop\Проекты\2_Практика с Nice3 Point\Registry Changer 2\obj\Debug\net8.0\Registry Changer 2.genruntimeconfig.cache
 C:\Users\orlov\Desktop\Проекты\2_Практика с Nice3 Point\Registry Changer 2\obj\Debug\net8.0\ref\Registry Changer 2.dll
+C:\Users\orlov\Desktop\Проекты\2_Практика с Nice3 Point\Registry Changer 2\obj\Debug\net8.0\Registry Changer 2.sourcelink.json
