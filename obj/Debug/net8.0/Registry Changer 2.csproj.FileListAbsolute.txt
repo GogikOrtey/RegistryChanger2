@@ -1,0 +1,14 @@
+C:\Users\orlov\Desktop\Проекты\2_Практика с Nice3 Point\Registry Changer 2\bin\Debug\net8.0\Registry Changer 2.exe
+C:\Users\orlov\Desktop\Проекты\2_Практика с Nice3 Point\Registry Changer 2\bin\Debug\net8.0\Registry Changer 2.deps.json
+C:\Users\orlov\Desktop\Проекты\2_Практика с Nice3 Point\Registry Changer 2\bin\Debug\net8.0\Registry Changer 2.runtimeconfig.json
+C:\Users\orlov\Desktop\Проекты\2_Практика с Nice3 Point\Registry Changer 2\bin\Debug\net8.0\Registry Changer 2.dll
+C:\Users\orlov\Desktop\Проекты\2_Практика с Nice3 Point\Registry Changer 2\bin\Debug\net8.0\Registry Changer 2.pdb
+C:\Users\orlov\Desktop\Проекты\2_Практика с Nice3 Point\Registry Changer 2\obj\Debug\net8.0\Registry Changer 2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\orlov\Desktop\Проекты\2_Практика с Nice3 Point\Registry Changer 2\obj\Debug\net8.0\Registry Changer 2.AssemblyInfoInputs.cache
+C:\Users\orlov\Desktop\Проекты\2_Практика с Nice3 Point\Registry Changer 2\obj\Debug\net8.0\Registry Changer 2.AssemblyInfo.cs
+C:\Users\orlov\Desktop\Проекты\2_Практика с Nice3 Point\Registry Changer 2\obj\Debug\net8.0\Registry Changer 2.csproj.CoreCompileInputs.cache
+C:\Users\orlov\Desktop\Проекты\2_Практика с Nice3 Point\Registry Changer 2\obj\Debug\net8.0\Registry Changer 2.dll
+C:\Users\orlov\Desktop\Проекты\2_Практика с Nice3 Point\Registry Changer 2\obj\Debug\net8.0\refint\Registry Changer 2.dll
+C:\Users\orlov\Desktop\Проекты\2_Практика с Nice3 Point\Registry Changer 2\obj\Debug\net8.0\Registry Changer 2.pdb
+C:\Users\orlov\Desktop\Проекты\2_Практика с Nice3 Point\Registry Changer 2\obj\Debug\net8.0\Registry Changer 2.genruntimeconfig.cache
+C:\Users\orlov\Desktop\Проекты\2_Практика с Nice3 Point\Registry Changer 2\obj\Debug\net8.0\ref\Registry Changer 2.dll
