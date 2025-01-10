@@ -4,10 +4,13 @@ using Microsoft.Win32;
 Add1 Add1 = new Add1();
 
 Add1.RegistryAdder_readKeyValue("MyValue_2");
+
 Add1.RegistryAdder_addOrRecreateNewValue("MyValue_3", "Новое значение 1");
 Add1.RegistryAdder_readKeyValue("MyValue_3");
 Add1.RegistryAdder_addOrRecreateNewValue("MyValue_3", "Новое значение 2");
 Add1.RegistryAdder_readKeyValue("MyValue_3");
+
+Add1.RegistryAdder_readKeyValue("MyValue_4");
 
 public class Add1
 {
@@ -41,7 +44,7 @@ public class Add1
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"При создании или перезаписи нового ключа по пути {keyPath}, с именем {keyName}, произошла ошибка: {ex.Message}");
+            Console.WriteLine($"\nПри создании или перезаписи нового ключа по пути {keyPath}, с именем {keyName}, произошла ошибка: {ex.Message}");
         }
     }
 
@@ -51,6 +54,7 @@ public class Add1
     public string RegistryAdder_readKeyValue(string keyName, string keyPath = @"SOFTWARE\MyApp")
     {
         string keyValue = "";
+        bool isKeyFounted = false; // Флаг, был ли найден ключ
 
         try
         {
@@ -64,25 +68,29 @@ public class Add1
                     if (value != null)
                     {
                         keyValue = value.ToString();
+                        isKeyFounted = true;
                     }
                     else
                     {
-                        Console.WriteLine($"Значение '{keyName}' не найдено.");
+                        Console.WriteLine($"\nЗначение '{keyName}' не найдено.");
                     }
                 }
                 else
                 {
-                    Console.WriteLine($"Ключ '{keyPath}' не найден.");
+                    Console.WriteLine($"\nКлюч '{keyPath}' не найден.");
                 }
             }
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"При попытке чтения ключа {keyPath}, с именем {keyName}, произошла необработанная ошибка: {ex.Message}");
+            Console.WriteLine($"\nПри попытке чтения ключа {keyPath}, с именем {keyName}, произошла необработанная ошибка: {ex.Message}");
         }
 
-        Console.WriteLine("\nЗначение ключа успешно получено:");
-        Console.WriteLine(keyName + " = " + keyValue);
+        if (isKeyFounted == true)
+        {
+            Console.WriteLine("\nЗначение ключа успешно получено:");
+            Console.WriteLine(keyName + " = " + keyValue);
+        }
 
         return keyValue;
     }
