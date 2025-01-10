@@ -9,25 +9,32 @@ public class Add1
 {
     public void RegistryAdder1(string inputString, string valueName = "MyValue")
     {
+        // keyPath - путь к ключу 
+        // valueName - имя ключа 
+            // Если не передано в функцию - то по умолчанию "MyValue"
+
         // Путь к ключу реестра
         string keyPath = @"SOFTWARE\MyApp";
 
-        // keyPath - путь к ключу
-        // valueName - имя ключа
-            // Если не передано в функцию - то по умолчанию "MyValue"
+        try
+        {
+            // Создание/открытие ключа
+            RegistryKey key = Registry.CurrentUser.CreateSubKey(keyPath);
 
-        // Создание/открытие ключа
-        RegistryKey key = Registry.CurrentUser.CreateSubKey(keyPath);
+            // Запись значения
+            key.SetValue(valueName, inputString);
+            Console.WriteLine($"Значение '{valueName}' записано в реестр.");
 
-        // Запись значения
-        key.SetValue(valueName, inputString);
-        Console.WriteLine($"Значение '{valueName}' записано в реестр.");
+            // Чтение значения
+            object value = key.GetValue(valueName);
+            Console.WriteLine($"Значение '{valueName}' из реестра: {value}");
 
-        // Чтение значения
-        object value = key.GetValue(valueName);
-        Console.WriteLine($"Значение '{valueName}' из реестра: {value}");
-
-        // Закрытие ключа
-        key.Close();
+            // Закрытие ключа
+            key.Close();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Произошла ошибка: {ex.Message}");
+        }
     }
 }
